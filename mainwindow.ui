@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>526</width>
+    <height>342</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Оцінка стану професійної підготовки майбутніх фахівців з туризму до анімаційної діяльності </string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="ftest.qrc">
+    <normaloff>:/images/app.ico</normaloff>:/images/app.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>526</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>false</bool>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>&amp;Тести</string>
+    </property>
+    <addaction name="actionTest1"/>
+    <addaction name="actionTest2"/>
+    <addaction name="actionTest3"/>
+    <addaction name="actionTest4"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>&amp;Файл</string>
+    </property>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>&amp;Результати</string>
+    </property>
+    <addaction name="actionStudent"/>
+    <addaction name="actionMediane"/>
+    <addaction name="separator"/>
+    <addaction name="actionTable"/>
+    <addaction name="separator"/>
+    <addaction name="actionXMLExport"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>&amp;?</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="menu_2"/>
+   <addaction name="menu"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionTest1"/>
+   <addaction name="actionTest2"/>
+   <addaction name="actionTest3"/>
+   <addaction name="actionTest4"/>
+   <addaction name="separator"/>
+  </widget>
+  <action name="actionTest1">
+   <property name="icon">
+    <iconset resource="ftest.qrc">
+     <normaloff>:/images/d1.png</normaloff>:/images/d1.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Когнитивний...</string>
+   </property>
+   <property name="toolTip">
+    <string>Оцінка рівня сформованості когнітивного компонента</string>
+   </property>
+   <property name="statusTip">
+    <string>Оцінка рівня сформованості когнітивного компонента</string>
+   </property>
+  </action>
+  <action name="actionTest2">
+   <property name="icon">
+    <iconset resource="ftest.qrc">
+     <normaloff>:/images/d2.png</normaloff>:/images/d2.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Діяльнісний...</string>
+   </property>
+   <property name="toolTip">
+    <string>Оцінка рівня сформованості діяльнісного компонента</string>
+   </property>
+   <property name="statusTip">
+    <string>Оцінка рівня сформованості діяльнісного компонента</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>В&amp;ихід</string>
+   </property>
+   <property name="toolTip">
+    <string>Завершення роботи програми</string>
+   </property>
+   <property name="statusTip">
+    <string>Завершення роботи програми</string>
+   </property>
+  </action>
+  <action name="actionGroup">
+   <property name="text">
+    <string>&amp;Таблиця...</string>
+   </property>
+   <property name="toolTip">
+    <string>Список академічних груп, що беруть участь у тестуванні</string>
+   </property>
+   <property name="statusTip">
+    <string>Список академічних груп, що беруть участь у тестуванні</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>&amp;Про програму...</string>
+   </property>
+   <property name="toolTip">
+    <string>Відомості про програму та її розробників</string>
+   </property>
+   <property name="statusTip">
+    <string>Відомості про програму та її розробників</string>
+   </property>
+  </action>
+  <action name="actionStudent">
+   <property name="text">
+    <string>Критерій &amp;Ст'юдента...</string>
+   </property>
+   <property name="toolTip">
+    <string>Статистична обробка результатів із застосуванням критерія Ст'юдента</string>
+   </property>
+  </action>
+  <action name="actionMediane">
+   <property name="text">
+    <string>Метод середніх &amp;величин...</string>
+   </property>
+   <property name="toolTip">
+    <string>Статистична обробка результатів методом середніх величин</string>
+   </property>
+  </action>
+  <action name="actionTable">
+   <property name="text">
+    <string>&amp;Таблиця</string>
+   </property>
+   <property name="toolTip">
+    <string>Вивести результати тестування у вигляді таблиці</string>
+   </property>
+   <property name="statusTip">
+    <string>Вивести результати тестування у вигляді таблиці</string>
+   </property>
+  </action>
+  <action name="actionXMLExport">
+   <property name="text">
+    <string>&amp;Експорт...</string>
+   </property>
+   <property name="toolTip">
+    <string>Експорт результатів в у формат XML</string>
+   </property>
+   <property name="statusTip">
+    <string>Експорт результатів в у формат XML</string>
+   </property>
+  </action>
+  <action name="actionTest3">
+   <property name="icon">
+    <iconset resource="ftest.qrc">
+     <normaloff>:/images/d3.png</normaloff>:/images/d3.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Мотиваційний...</string>
+   </property>
+   <property name="toolTip">
+    <string>Оцінка рівня сформованості мотиваційного компонента</string>
+   </property>
+  </action>
+  <action name="actionTest4">
+   <property name="icon">
+    <iconset resource="ftest.qrc">
+     <normaloff>:/images/d4.png</normaloff>:/images/d4.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Самооцінка...</string>
+   </property>
+   <property name="toolTip">
+    <string>Оцінка рівня сформованості самооцінного компонента</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ftest.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTest1</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slotTest1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTest2</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slotTest2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionStudent</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slotStudent()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTable</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slotTable()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionXMLExport</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slotExport()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTest3</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slotTest3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>actionTest4</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>slotTest4()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>262</x>
+     <y>170</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>slotTest1()</slot>
+  <slot>slotTest2()</slot>
+  <slot>slotStudent()</slot>
+  <slot>slotTable()</slot>
+  <slot>slotExport()</slot>
+  <slot>slotTest3()</slot>
+  <slot>slotTest4()</slot>
+ </slots>
+</ui>

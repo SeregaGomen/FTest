@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TableDialog</class>
+ <widget class="QDialog" name="TableDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1009</width>
+    <height>618</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Результати анкетування</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QToolButton" name="tbFirst">
+       <property name="toolTip">
+        <string>Перейти до початку таблиці</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="ftest.qrc">
+         <normaloff>:/images/media-fast-backward.png</normaloff>:/images/media-fast-backward.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="tbPrior">
+       <property name="toolTip">
+        <string>Перейти до попереднього рядка таблиці</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="ftest.qrc">
+         <normaloff>:/images/media-backward.png</normaloff>:/images/media-backward.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="tbNext">
+       <property name="toolTip">
+        <string>Перейти до наступного рядка таблиці</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="ftest.qrc">
+         <normaloff>:/images/media-play.png</normaloff>:/images/media-play.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="tbLast">
+       <property name="toolTip">
+        <string>Перейти в кінець таблиці</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="ftest.qrc">
+         <normaloff>:/images/media-fast-forward.png</normaloff>:/images/media-fast-forward.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame">
+       <property name="frameShape">
+        <enum>QFrame::StyledPanel</enum>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Raised</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="tb1">
+       <property name="toolTip">
+        <string>Редагувати дкогнитивний тест</string>
+       </property>
+       <property name="statusTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="ftest.qrc">
+         <normaloff>:/images/d1.png</normaloff>:/images/d1.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="tb2">
+       <property name="toolTip">
+        <string>Редагувати дільнісний тест</string>
+       </property>
+       <property name="statusTip">
+        <string/>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="ftest.qrc">
+         <normaloff>:/images/d2.png</normaloff>:/images/d2.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="tb3">
+       <property name="toolTip">
+        <string>Редагувати мотиваціний тест</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="ftest.qrc">
+         <normaloff>:/images/d3.png</normaloff>:/images/d3.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="tb4">
+       <property name="toolTip">
+        <string>Редагувати тест самооцінки</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="ftest.qrc">
+         <normaloff>:/images/d4.png</normaloff>:/images/d4.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QToolButton" name="tbName">
+       <property name="toolTip">
+        <string>Редагувати анкетні дані</string>
+       </property>
+       <property name="text">
+        <string>...</string>
+       </property>
+       <property name="icon">
+        <iconset resource="ftest.qrc">
+         <normaloff>:/images/people.png</normaloff>:/images/people.png</iconset>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_2">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTableWidget" name="tableWidget">
+     <column>
+      <property name="text">
+       <string>ПІБ студента</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Група</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Курс</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Дата</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Когнитивний тест</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Діяльнісний тест</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Мотиваційний тест</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Тест самооцінки</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Id cтудента</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>Id</string>
+      </property>
+     </column>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="ftest.qrc"/>
+ </resources>
+ <connections/>
+</ui>

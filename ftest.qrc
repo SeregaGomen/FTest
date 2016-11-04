@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/app.ico</file>
+        <file>images/d1.png</file>
+        <file>images/d2.png</file>
+        <file>images/d3.png</file>
+        <file>images/d4.png</file>
+        <file>images/d6.png</file>
+        <file>images/d7.png</file>
+        <file>images/d5.png</file>
+        <file>images/media-backward.png</file>
+        <file>images/media-fast-backward.png</file>
+        <file>images/media-fast-forward.png</file>
+        <file>images/media-play.png</file>
+        <file>images/remove.png</file>
+        <file>images/people.png</file>
+    </qresource>
+</RCC>
